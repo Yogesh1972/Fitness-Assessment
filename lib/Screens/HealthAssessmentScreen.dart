@@ -17,94 +17,93 @@ class _HealthAssessmentScreenState extends State<HealthAssessmentScreen> {
         children: [
           Column(
             children: [
-              Hero(
-                transitionOnUserGestures: true,
-                tag: "A",
-                child: Container(
-                  width: double.infinity,
-                  height: size.height * 0.36,
-                  decoration: BoxDecoration(
-                    gradient: RadialGradient(
-                      radius: 1,
-                      center: const Alignment(0, 0.9),
-                      colors: [
-                        const Color(0xff91B655).withOpacity(0.5),
-                        const Color(0xff69F5BB).withOpacity(0.5),
-                      ],
-                    ),
+              Container(
+                width: double.infinity,
+                height: size.height * 0.36,
+                decoration: BoxDecoration(
+                  gradient: RadialGradient(
+                    radius: 1,
+                    center: const Alignment(0, 0.9),
+                    colors: [
+                      const Color(0xff91B655).withOpacity(0.5),
+                      const Color(0xff69F5BB).withOpacity(0.5),
+                    ],
                   ),
-                  child: Padding(
-                    padding: EdgeInsets.only(
-                        left: size.width * 0.04, right: size.width * 0.04),
-                    child: Row(
-                      children: [
-                        Container(
-                          width: size.width * 0.5,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              SizedBox(height: size.height * 0.06),
-                              Container(
-                                alignment: Alignment.centerLeft,
-                                child: IconButton(
-                                  onPressed: () {
-                                    Navigator.pop(context);
-                                  },
-                                  icon: const Icon(
-                                    Icons.arrow_back,
-                                    color: Color(0xff3A3937),
-                                  ),
+                ),
+                child: Padding(
+                  padding: EdgeInsets.only(
+                      left: size.width * 0.04, right: size.width * 0.04),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: size.width * 0.5,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            SizedBox(height: size.height * 0.06),
+                            Container(
+                              alignment: Alignment.centerLeft,
+                              child: IconButton(
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
+                                icon: const Icon(
+                                  Icons.arrow_back,
+                                  color: Color(0xff3A3937),
                                 ),
                               ),
-                              SizedBox(height: size.height * 0.02),
-                              const Text(
-                                "Health Risk Assessment",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Color(0xff222E58),
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.w600,
-                                ),
+                            ),
+                            SizedBox(height: size.height * 0.02),
+                            const Text(
+                              "Health Risk Assessment",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Color(0xff222E58),
+                                fontSize: 24,
+                                fontWeight: FontWeight.w600,
                               ),
-                              SizedBox(height: size.height * 0.01),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  SizedBox(width: size.width * 0.07),
-                                  Container(
-                                    width: size.width * 0.17,
-                                    height: 20,
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffffffff),
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Image.asset(
-                                          "Assests/Images/stopwatch.png",
-                                          color: const Color(0xff222E58),
-                                        ),
-                                        const SizedBox(width: 5),
-                                        const Text(
-                                          "4 min",
-                                          style: TextStyle(
-                                              color: Color(0xff222E58),
-                                              fontSize: 11,
-                                              fontWeight: FontWeight.w500),
-                                        )
-                                      ],
-                                    ),
+                            ),
+                            SizedBox(height: size.height * 0.01),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                SizedBox(width: size.width * 0.07),
+                                Container(
+                                  width: size.width * 0.17,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xffffffff),
+                                    borderRadius: BorderRadius.circular(10),
                                   ),
-                                ],
-                              )
-                            ],
-                          ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Image.asset(
+                                        "Assests/Images/stopwatch.png",
+                                        color: const Color(0xff222E58),
+                                      ),
+                                      const SizedBox(width: 5),
+                                      const Text(
+                                        "4 min",
+                                        style: TextStyle(
+                                            color: Color(0xff222E58),
+                                            fontSize: 11,
+                                            fontWeight: FontWeight.w500),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
                         ),
-                        Container(
-                          width: size.width * 0.4,
-                          height: size.height * 0.36,
+                      ),
+                      Container(
+                        width: size.width * 0.4,
+                        height: size.height * 0.36,
+                        child: Hero(
+                          transitionOnUserGestures: true,
+                          tag: "A",
                           child: CachedImage(
                             fit: BoxFit.cover,
                             "https://s3-alpha-sig.figma.com/img/16a8/7631/c89fe67d48b96af237059fad956b91cd?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hOp0BAbGgm4wTBE2zvYBClp1WOaGobGg91BRu7DD83zFIU~R3EZZj~coER-cEN54R~vHG3XA8aig5EJhRB7KLyoopFZzuWA4xxe53Hr19A71qvBhPLvJkelO8H9xzJOfuEF3DWM90SKqnDwPsoHjTlxXQIz8mripSGlfGoKsJxdWabNX~AeCHGCMHbFhulTIL0ywmyilihagYzRl5WFvUUnBN~Rh996PDkWjzX4fJbYbt~C2DDc31hW6L~QwPJ7beflUziBMNpo63eE3iPzDUtQK0FHYDFUs0NcITBhutxVlWafFvD74eNd0vvndpXf3IeZ9QwRLU77ISFQs2dfrLQ__",
@@ -115,9 +114,9 @@ class _HealthAssessmentScreenState extends State<HealthAssessmentScreen> {
                               );
                             },
                           ),
-                        )
-                      ],
-                    ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
               )
@@ -442,7 +441,7 @@ class _HealthAssessmentScreenState extends State<HealthAssessmentScreen> {
                                           bottom: 2,
                                         ),
                                         child: Text(
-                                          "   against a stable object or wall",
+                                          "    against a stable object or wall",
                                           style: TextStyle(
                                             color: Color(0xff222E58),
                                             fontWeight: FontWeight.w400,
@@ -486,7 +485,7 @@ class _HealthAssessmentScreenState extends State<HealthAssessmentScreen> {
                                           bottom: 2,
                                         ),
                                         child: Text(
-                                          "   provided by the trainer",
+                                          "    provided by the trainer",
                                           style: TextStyle(
                                             color: Color(0xff222E58),
                                             fontWeight: FontWeight.w400,

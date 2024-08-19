@@ -105,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           width: size.height * 0.04,
                           child: Shimmer.fromColors(
                             baseColor: Colors.white,
-                            highlightColor: Colors.grey,
+                            highlightColor: Colors.grey.shade300,
                             child: Container(
                               height: size.height * 0.04,
                               width: size.height * 0.04,
@@ -331,12 +331,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          const SizedBox(
-            height: 8,
-          ),
           Expanded(
             child: WorkOutList(),
-          )
+          ),
+          SizedBox(
+            height: size.height * 0.02,
+          ),
         ],
       ),
     );

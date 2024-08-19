@@ -55,7 +55,7 @@ class _AppointmentListState extends State<AppointmentList> {
                   width: size.width * 0.2,
                   child: Shimmer.fromColors(
                     baseColor: Colors.white,
-                    highlightColor: Colors.grey,
+                    highlightColor: Colors.grey.shade300,
                     child: Container(
                       height: size.height * 0.15,
                       width: size.width,

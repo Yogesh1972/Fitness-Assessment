@@ -21,7 +21,7 @@ class CachedImage extends StatelessWidget {
       progressIndicatorBuilder: (context, url, downloadProgress) => Center(
           child: CircularProgressIndicator(
         value: downloadProgress.progress,
-        color: Colors.grey,
+        color: Colors.grey.shade300,
         strokeWidth: 2,
       )),
     );

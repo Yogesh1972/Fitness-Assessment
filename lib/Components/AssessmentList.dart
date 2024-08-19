@@ -34,39 +34,39 @@ class _AssessmentListState extends State<AssessmentList> {
             ),
             child: Row(
               children: [
-                Hero(
-                  transitionOnUserGestures: true,
-                  tag: "A",
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      bottomLeft: Radius.circular(20),
-                    ),
-                    child: Container(
-                      width: size.width * 0.38,
-                      decoration: BoxDecoration(
-                        gradient: index % 2 == 0
-                            ? RadialGradient(
-                                center: Alignment(-0.5, -0.5),
-                                radius: 0.9,
-                                colors: [
-                                  Color(0xffDABE5D).withOpacity(0.5),
-                                  Color(0xffE36731).withOpacity(0.5),
-                                ],
-                              )
-                            : RadialGradient(
-                                center: Alignment(-0.5, -0.5),
-                                radius: 0.9,
-                                colors: [
-                                  Color(0xff91B655).withOpacity(0.5),
-                                  Color(0xff69F5BB).withOpacity(0.5),
-                                ],
-                              ),
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(17),
-                          bottomLeft: Radius.circular(17),
-                        ),
+                ClipRRect(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    bottomLeft: Radius.circular(20),
+                  ),
+                  child: Container(
+                    width: size.width * 0.38,
+                    decoration: BoxDecoration(
+                      gradient: index % 2 == 0
+                          ? RadialGradient(
+                              center: Alignment(-0.5, -0.5),
+                              radius: 0.9,
+                              colors: [
+                                Color(0xffDABE5D).withOpacity(0.5),
+                                Color(0xffE36731).withOpacity(0.5),
+                              ],
+                            )
+                          : RadialGradient(
+                              center: Alignment(-0.5, -0.5),
+                              radius: 0.9,
+                              colors: [
+                                Color(0xff91B655).withOpacity(0.5),
+                                Color(0xff69F5BB).withOpacity(0.5),
+                              ],
+                            ),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(17),
+                        bottomLeft: Radius.circular(17),
                       ),
+                    ),
+                    child: Hero(
+                      transitionOnUserGestures: true,
+                      tag: "A",
                       child: CachedImage(
                         fit: BoxFit.cover,
                         snapshot.child('imageUrl').value.toString(),
@@ -180,7 +180,7 @@ class _AssessmentListState extends State<AssessmentList> {
               width: size.width,
               child: Shimmer.fromColors(
                 baseColor: Colors.white,
-                highlightColor: Colors.grey,
+                highlightColor: Colors.grey.shade300,
                 child: Container(
                   height: size.height * 0.15,
                   width: size.width,
