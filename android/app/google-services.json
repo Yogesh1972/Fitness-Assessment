@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "74212545508",
+    "firebase_url": "https://fitness-assessment-15f6f-default-rtdb.firebaseio.com",
+    "project_id": "fitness-assessment-15f6f",
+    "storage_bucket": "fitness-assessment-15f6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74212545508:android:185c3984068f9dbc2fadf1",
+        "android_client_info": {
+          "package_name": "com.example.fitness_assign"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl2NHqTK6Ln9WehF8sip5mzN708uMR6b0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
